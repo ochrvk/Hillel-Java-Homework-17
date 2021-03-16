@@ -1,3 +1,5 @@
+package chrvk.javaelementaty.hw17.task1;
+
 import com.google.gson.Gson;
 
 import java.util.Scanner;
@@ -32,12 +34,13 @@ public class Main {
         return currency;
     }
 
+
     public static void returnMoney(Currency currency) {
         if (currency.exchangeRate.size() == 0) {
             System.out.println("Data empty");
         } else {
             for (int i = 0; i < currency.exchangeRate.size(); i++) {
-                if (currency.exchangeRate.get(i).currency != null){
+                if (currency.exchangeRate.get(i).currency != null) {
                     if (currency.exchangeRate.get(i).currency.equals("USD")) {
                         System.out.println("Sale USD: " + currency.exchangeRate.get(i).saleRate + " , purchase USD: "
                                 + currency.exchangeRate.get(i).purchaseRate);

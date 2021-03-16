@@ -1,3 +1,5 @@
+package chrvk.javaelementaty.hw17.task1;
+
 public class Response {
 
     String body;

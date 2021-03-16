@@ -1,3 +1,5 @@
+package chrvk.javaelementaty.hw17.task1;
+
 import java.util.List;
 
 public class Currency {
@@ -13,8 +15,7 @@ public class Currency {
 
     @Override
     public String toString() {
-        return "Currency{" +
-                "date='" + date + '\'' +
+        return "date='" + date + '\'' +
                 ", bank='" + bank + '\'' +
                 ", baseCurrency=" + baseCurrency +
                 ", baseCurrencyLit='" + baseCurrencyLit + '\'' +

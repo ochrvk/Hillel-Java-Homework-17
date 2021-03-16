@@ -1,3 +1,5 @@
+package chrvk.javaelementaty.hw17.task1;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,15 +33,21 @@ public class HttpUtil {
         return response;
     }
 
-    private static String getStringFromStream(InputStream inputStream) throws IOException {
+    private static String getStringFromStream(InputStream inputStream) {
         final int BUFFER_SIZE = 4096;
         ByteArrayOutputStream resultStream = new ByteArrayOutputStream(BUFFER_SIZE);
         byte[] buffer = new byte[BUFFER_SIZE];
         int length;
-        while ((length = inputStream.read(buffer)) != -1) {
-            resultStream.write(buffer, 0, length);
+
+        try {
+            while ((length = inputStream.read(buffer)) != -1) {
+                resultStream.write(buffer, 0, length);
+            }
+            return resultStream.toString("UTF-8");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            return null;
         }
-        return resultStream.toString("UTF-8");
     }
 
 }
