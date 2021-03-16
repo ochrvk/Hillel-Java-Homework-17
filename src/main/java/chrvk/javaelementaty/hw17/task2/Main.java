@@ -2,10 +2,7 @@ package chrvk.javaelementaty.hw17.task2;
 
 import chrvk.javaelementaty.hw17.task1.Currency;
 import com.google.gson.Gson;
-import okhttp3.MediaType;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import  okhttp3.*;
 
 import java.io.IOException;
 import java.util.Objects;
