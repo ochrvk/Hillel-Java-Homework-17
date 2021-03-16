@@ -1,3 +1,4 @@
+//То же самое, что и task1 но для запросов использовать библиотеку Okhttp3
 package chrvk.javaelementaty.hw17.task2;
 
 import chrvk.javaelementaty.hw17.task1.Currency;
